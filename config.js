@@ -5,5 +5,5 @@
  */
 window.BLOG_CONFIG = {
   SUPABASE_URL: "dxl1191388237@gmail.com",
-  SUPABASE_ANON_KEY: "may"
+  SUPABASE_ANON_KEY: "may-day"
 };
