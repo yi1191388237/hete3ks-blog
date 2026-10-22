@@ -1,0 +1,7 @@
+/* Supabase 未配置时使用的演示文章。正式启用后，文章由数据库读取。 */
+window.DEMO_POSTS = [
+{id:"welcome",title:"欢迎来到 Hete3ks",slug:"welcome-to-hete3ks",category:"随笔",excerpt:"这里是我的个人博客，用来记录技术探索、生活片段与不断生长的想法。",cover_symbol:"H",cover_color:"#e4d7c8",published_at:"2026-10-20T09:00:00Z",content:"<p>欢迎来到 Hete3ks！这是一个记录和整理想法的个人空间。</p><h2>为什么写博客</h2><p>我希望把学习过程中的发现、实践中的经验和生活里的观察留存下来。写作不仅是分享，也是一种整理思路的方式。</p><blockquote>Stay curious. Keep making.</blockquote><p>未来这里会持续更新技术、生活、阅读与研究相关的内容。</p>"},
+{id:"notes",title:"让学习笔记真正可复用",slug:"reusable-learning-notes",category:"技术",excerpt:"记录环境、操作步骤、错误和解决办法，让未来的自己可以快速复现。",cover_symbol:"记",cover_color:"#d9e2d4",published_at:"2026-10-16T09:00:00Z",content:"<p>看懂教程并不等于真正掌握。环境差异、依赖版本和一个小小的配置，都可能改变最终结果。</p><h2>记下上下文</h2><p>一份实用的笔记应当记录目标、运行环境、关键步骤、错误信息、解决方法和已知限制。</p><p>对于编程项目，记录操作系统、语言版本、安装命令和启动命令，往往能节省下一次排错的时间。</p>"},
+{id:"habits",title:"把长期计划拆成今天的一步",slug:"small-steps-long-term",category:"生活",excerpt:"长期积累不需要每天做到最好，而是找到一个可以继续前进的最小动作。",cover_symbol:"日",cover_color:"#e8dadd",published_at:"2026-10-11T09:00:00Z",content:"<p>宏大的计划令人兴奋，但也可能让开始行动变得困难。把目标缩小到今天能够完成的一步，往往更容易坚持。</p><h2>给中断留出空间</h2><p>持续不代表永远不间断。忙碌的时候，读一页、写一句，依然可以让习惯保持活力。</p>"},
+{id:"market",title:"研究市场时，先写下自己的假设",slug:"write-down-market-hypothesis",category:"研究",excerpt:"在观察价格和新闻之前，先明确假设、验证条件与风险边界，让复盘更有意义。",cover_symbol:"研",cover_color:"#d9e0e8",published_at:"2026-10-05T09:00:00Z",content:"<p>研究市场时，最容易被短期波动带着走。事先写下自己的判断、验证条件和失效条件，可以帮助我们区分分析与事后解释。</p><h2>把观点变成可检查的假设</h2><p>记录数据来源、观察周期、关键风险和反例。复盘时不只看结果，也要检查决策过程是否遵守了原先的规则。</p><p>本文仅用于展示博客文章排版，不构成投资建议。</p>"}
+];
