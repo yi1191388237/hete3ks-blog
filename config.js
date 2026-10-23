@@ -4,6 +4,6 @@
  * 配置方法见 README.md。留空时，博客会显示内置演示文章；后台不可登录。
  */
 window.BLOG_CONFIG = {
-  SUPABASE_URL: "dxl1191388237@gmail.com",
+  SUPABASE_URL: "https://djjdlvtvvpgiqvskfkil.supabase.co/rest/v1/",
   SUPABASE_ANON_KEY: "may-day"
 };
