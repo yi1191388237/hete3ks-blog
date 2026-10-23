@@ -5,5 +5,5 @@
  */
 window.BLOG_CONFIG = {
   SUPABASE_URL: "https://djjdlvtvvpgiqvskfkil.supabase.co/rest/v1/",
-  SUPABASE_ANON_KEY: "may-day"
+  SUPABASE_ANON_KEY: "sb_publishable_jecB7a8fDfAiRyHzyr7KnQ_gKKcr2xx"
 };
