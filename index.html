@@ -1,24 +1,47 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Hete3ks 的个人博客，记录技术、生活、阅读与投资研究。">
-<meta name="theme-color" content="#f6f5f0"><title>Hete3ks — Notes & Discoveries</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#f7f5f0">
+<title>Hete3ks — Notes & Discoveries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar"><a class="brand" href="./"><span class="brand-icon">H.</span><span>Hete3ks<small>NOTES & DISCOVERIES</small></span></a><nav><a href="#articles">文章</a><a href="#about">关于</a><button id="themeToggle" class="round-btn" title="切换主题" aria-label="切换主题">◐</button></nav></header>
+<header class="topbar">
+  <a class="brand" href="./"><span class="brand-icon">H.</span><span>Hete3ks<small>NOTES & DISCOVERIES</small></span></a>
+  <nav><a href="#articles">文章</a><a href="#archive">归档</a><a href="#about">关于</a><button id="themeToggle" class="round-btn" title="切换主题" aria-label="切换主题">◐</button></nav>
+</header>
 <main>
-<section class="hero wrap"><div class="hero-text"><p class="eyebrow">A PERSONAL KNOWLEDGE GARDEN</p><h1>Stay curious.<br><em>Keep making.</em></h1><p class="hero-intro">这里是 Hete3ks 的个人空间。记录技术探索、生活片段、阅读思考，以及不断变化的世界。</p><div class="hero-actions"><a class="primary-link" href="#articles">浏览文章 <span>↘</span></a><span class="hero-note">持续记录 · 慢慢生长</span></div></div><div class="hero-visual"><div class="visual-sun"></div><div class="visual-ring ring-a"></div><div class="visual-ring ring-b"></div><div class="visual-hill hill-a"></div><div class="visual-hill hill-b"></div><div class="visual-coord">35°41' N<br>139°41' E</div><span class="visual-stamp">FIELD<br>NOTES<br>№ 001</span></div></section>
-<section id="articles" class="wrap articles-section"><div class="section-top"><div><p class="eyebrow">THE JOURNAL</p><h2>最近的记录<span class="tiny-star">✳</span></h2></div><span id="postCount" class="muted"></span></div>
-<div class="controls"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索标题、正文或标签…" aria-label="搜索文章"></label><div id="categoryFilters" class="filters"></div></div>
-<div id="postGrid" class="post-grid"><div class="loading">正在加载文章…</div></div><p id="emptyState" class="empty" hidden>没有找到相关内容，换个关键词试试。</p>
-</section>
-<section id="about" class="about wrap"><div class="about-mark">✳</div><div><p class="eyebrow">A LITTLE ABOUT THIS SPACE</p><h2>你好，欢迎来到这里。</h2><p>我喜欢探索新工具、理解复杂问题，也相信写作能让思考更加清晰。这个博客既是公开的笔记本，也是一个不断整理和更新的知识花园。</p><a class="under-link" href="mailto:hello@example.com">联系我 <span>↗</span></a></div></section>
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">A PERSONAL KNOWLEDGE GARDEN</p>
+      <h1>Stay curious.<br><em>Keep making.</em></h1>
+      <p class="hero-intro">记录技术探索、生活片段、阅读思考，以及不断变化的世界。这里不追求快速得出答案，而是认真记录寻找答案的过程。</p>
+      <div class="hero-actions"><a class="primary-link" href="#articles">浏览文章 <span>↘</span></a><span class="hero-note">持续记录 · 慢慢生长</span></div>
+      <div class="hero-stats"><div><strong id="postCount">—</strong><span>篇公开文章</span></div><div><strong id="categoryCount">—</strong><span>个主题分类</span></div></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true"><div class="visual-sun"></div><div class="visual-ring ring-a"></div><div class="visual-ring ring-b"></div><div class="visual-hill hill-a"></div><div class="visual-hill hill-b"></div><div class="visual-coord">FIELD NOTES<br>PERSONAL JOURNAL</div><span class="visual-stamp">HETE<br>№ 001</span></div>
+  </section>
+  <section id="articles" class="wrap articles-section">
+    <div class="section-top"><div><p class="eyebrow">THE JOURNAL</p><h2>最近的记录<span class="tiny-star">✳</span></h2></div><span id="resultCount" class="muted"></span></div>
+    <div class="controls"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索标题、正文或标签…" aria-label="搜索文章"></label><div id="categoryFilters" class="filters"></div></div>
+    <div id="postGrid" class="post-grid"><div class="loading">正在加载文章…</div></div>
+    <p id="emptyState" class="empty" hidden>没有找到相关内容，换个关键词试试。</p>
+    <div class="load-more-wrap"><button id="loadMore" class="secondary-btn" hidden>加载更多文章 ↓</button></div>
+  </section>
+  <section id="archive" class="archive wrap"><div><p class="eyebrow">A RECORD OF TIME</p><h2>按时间回看</h2></div><div id="archiveList" class="archive-list"><span class="muted">加载中…</span></div></section>
+  <section id="about" class="about wrap"><div class="about-mark">✳</div><div><p class="eyebrow">A LITTLE ABOUT THIS SPACE</p><h2>你好，欢迎来到这里。</h2><p>我喜欢探索新工具、理解复杂问题，也相信写作能让思考更加清晰。这个博客既是公开的笔记本，也是一个不断整理和更新的知识花园。</p><a class="under-link" href="mailto:hello@example.com">联系我 <span>↗</span></a></div></section>
 </main>
-<footer class="footer"><span>© <span id="year"></span> Hete3ks</span><span>Built for curiosity.</span><a href="#top" id="backTop">回到顶部 ↑</a></footer>
+<footer class="footer"><span>© <span id="year"></span> Hete3ks</span><span>Built for curiosity.</span><a href="#top" id="backTop">回到顶部 ↑</a><a href="admin.html">管理入口</a></footer>
 <div id="articleModal" class="modal" hidden><div class="modal-backdrop" data-close="1"></div><article class="article-panel"><button id="closeArticle" class="close-btn" aria-label="关闭文章">×</button><div id="articleContent"></div></article></div>
-<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+<script src="app.js"></script>
 </body></html>
